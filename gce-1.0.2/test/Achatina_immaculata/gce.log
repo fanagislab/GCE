@@ -1,0 +1,61 @@
+Load kmer depth frequency file...
+Set total kmer number is 113291624814
+File load finished, the last depth is 1499
+load node number 1860742243 total kmer number 113291624814
+
+For P(x):
+Possible peaks including: 32	64	128	737	810	1024	1200	1209	1266	1297	1317	
+
+For F(x):
+Possible peaks including: 35	66	132	737	810	1024	1200	1209	1297	1317	
+
+Raw kmer depth estiamtion:
+Curve	peak	expect_depth
+k-mer species 64	64.9154
+k-mer individuals 66	65.9541
+
+Warning: the expect depths caculated by P(x) and F(x) are ambiguous, you'd better set the option -c to get a credible result.
+The estimate peak number is 6
+the valley value is 12
+Initial ai...
+i	a[i]	c[i]
+1	0.444088	64.9154
+2	0.0731403	129.831
+3	0.0258109	194.746
+4	0.0135081	259.662
+5	0.00854864	324.577
+6	0.0059679	389.492
+i	b[i]	C[i]
+1	0.193221	65.9541
+2	0.0638733	131.908
+3	0.0335208	197.862
+4	0.0232854	263.816
+5	0.0181448	329.771
+6	0.0153093	395.725
+Initial ai and bi finished!
+start iterating using discrete model...
+C-iter number: 1	c distance: 1
+cvg is 64.9154 and node num is 732434054
+Cvg is 65.9541 and kmer num is 110148259395
+A-iter number: 1	distance: 1
+update now num: 732434054 now kmer: 110148259395
+A-iter number: 2	distance: 0.0694775
+update now num: 732434054 now kmer: 110148259395
+A-iter number: 3	distance: 0.000448028
+update now num: 795715243 now kmer: 109924900306
+A-iter number: 4	distance: 0.00655874
+update now num: 795715243 now kmer: 109924900306
+A-iter number: 5	distance: 0.000135451
+update now num: 795715243 now kmer: 109924900306
+For P(x):
+Possible peaks including: 32	64	158	227	293	350	455	737	810	1024	1200	1209	1266	1297	1317	
+the unique peak is 64
+For F(x):
+Possible peaks including: 35	66	162	231	299	355	460	737	810	1024	1200	1209	1297	1317	
+the unique peak is 66
+
+Final estimation table:
+raw_peak	effective_kmer_species	effective_kmer_individuals	coverage_depth	genome_size	a[1]	b[1]
+64	795715243	111767458237	64.9154	1.72174e+09	0.766873	0.324896
+
+Discrete mode estimation finished!

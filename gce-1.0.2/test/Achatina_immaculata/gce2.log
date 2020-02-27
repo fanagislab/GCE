@@ -1,0 +1,100 @@
+Load kmer depth frequency file...
+Set total kmer number is 113291624814
+File load finished, the last depth is 1499
+load node number 1860742243 total kmer number 113291624814
+
+For P(x):
+Possible peaks including: 32	64	128	737	810	1024	1200	1209	1266	1297	1317	
+max peak is unique peak!
+
+For F(x):
+Possible peaks including: 35	66	132	737	810	1024	1200	1209	1297	1317	
+max peak is unique peak!
+
+Raw kmer depth estiamtion:
+Curve	peak	expect_depth
+k-mer species 64	64.9154
+k-mer individuals 66	65.9541
+
+Warning: the expect depths caculated by P(x) and F(x) are ambiguous, you'd better set the option -c to get a credible result.
+The estimate peak number is 12
+the valley value is 12
+Initial ai...
+i	a[i]	c[i]
+0.5	0.125132	32.4577
+1	0.419262	64.9154
+1.5	0.0549439	97.3731
+2	0.0690514	129.831
+2.5	0.0306773	162.289
+3	0.024368	194.746
+3.5	0.0166351	227.204
+4	0.0127529	259.662
+4.5	0.0100104	292.119
+5	0.00807074	324.577
+5.5	0.00670224	357.035
+6	0.00563427	389.492
+i	b[i]	C[i]
+0.5	0.0281061	32.9771
+1	0.191037	65.9541
+1.5	0.0366296	98.9312
+2	0.0631511	131.908
+2.5	0.0332752	164.885
+3	0.0331417	197.862
+3.5	0.0255441	230.839
+4	0.0230221	263.816
+4.5	0.019973	296.793
+5	0.0179396	329.771
+5.5	0.016386	362.748
+6	0.0151362	395.725
+Initial ai and bi finished!
+start iterating using discrete model...
+C-iter number: 1	c distance: 1
+cvg is 64.9154 and node num is 775804695
+Cvg is 65.9541 and kmer num is 111407964649
+A-iter number: 1	distance: 1
+update now num: 775804695 now kmer: 111407964649
+A-iter number: 2	distance: 0.0193796
+update now num: 775804695 now kmer: 111407964649
+A-iter number: 3	distance: 0.000699681
+update now num: 795812685 now kmer: 109934504790
+A-iter number: 4	distance: 0.00351358
+update now num: 795828653 now kmer: 109935311594
+A-iter number: 5	distance: 0.000406572
+update now num: 795829701 now kmer: 109935382992
+A-iter number: 6	distance: 0.000113501
+update now num: 795829786 now kmer: 109935390220
+For P(x):
+Possible peaks including: 20	64	116	148	184	213	341	737	810	1024	1200	1209	1266	1297	1317	
+max peak is unique peak!
+For F(x):
+Possible peaks including: 22	66	117	151	187	460	737	810	1024	1200	1209	1297	1317	
+max peak is unique peak!
+C-iter number: 2	c distance: 0.00020918
+cvg is 64.9018 and node num is 775831951
+Cvg is 65.9369 and kmer num is 111408855313
+A-iter number: 1	distance: 1
+update now num: 775831951 now kmer: 111408855313
+A-iter number: 2	distance: 0.0035406
+update now num: 775831951 now kmer: 111408855313
+A-iter number: 3	distance: 0.000318487
+update now num: 795813028 now kmer: 109934553350
+A-iter number: 4	distance: 0.00347922
+update now num: 795828959 now kmer: 109935347651
+A-iter number: 5	distance: 0.000299683
+update now num: 795829996 now kmer: 109935417034
+For P(x):
+Possible peaks including: 20	64	116	148	184	213	347	737	810	1024	1200	1209	1266	1297	1317	
+max peak is unique peak!
+For F(x):
+Possible peaks including: 22	66	117	151	186	460	737	810	1024	1200	1209	1297	1317	
+max peak is unique peak!
+for hybrid: a[1/2]=0.179954 a1=0.545196
+kmer-species heterozygous ratio is about 0.0988732
+for hybrid: b[1/2]=0.0444793 b1=0.256899
+kmer-individual heterozygous ratio is about 0.0227455
+
+Final estimation table:
+raw_peak	effective_kmer_species	effective_kmer_individuals	coverage_depth	genome_size	a[1/2]	a[1]	b[1/2]	b[1]
+64	795829996	111768938534	64.9018	1.72212e+09	0.179954	0.545196	0.0444793	0.256899
+
+Discrete mode estimation finished!

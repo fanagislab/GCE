@@ -1,0 +1,22 @@
+The number of ranks within one unit of genomic frequency: 1
+The automatically calculated lowfreq cutoff from P(x) is: 2
+The estimated float-precision c by P(x) is: 20.010492928444
+The estimated integer-precision c by P(x) is: 19
+
+The total number of kmer individuals is: 30999528
+
+The total number of nonadjusted-correct kmer individuals is: 30999528
+
+The total number of adjusted-correct kmer individuals is: 
+The px_peak_kmer_indivduals is: 1687067
+The px_leftToPeak_kmer_individuals is: 7616793
+The theoretic peak rate is: 1.3467561
+The theoretic left to peak rate is: 6.100671543
+
+The total number of adjusted erroneous kmers: -25453.1632320657
+The total number of adjusted correct kmers: 31024981.1632321
+
+Estimated G and a[1]:
+most rough      : 1631549	none
+discreate model : 1549158	0.800919
+continuous model: 1550435	0.801688631473422

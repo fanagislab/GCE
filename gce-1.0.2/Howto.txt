@@ -1,0 +1,48 @@
+This is an introduction to estimate genome size and genome character properly. For
+more information, you can read the published manuscript.
+
+1. How to finish a simple run?
+./gce -f kmer_depth_file >gce.table 2>gce.log ##basic standard discrete model.
+./gce -f kmer_depth_file -c kmer_num -H 1 >gce.table 2>gce.log ##for heterozygous mode.
+./gce -f Kmer_depth_file -c kmer_num -m 1 -D 8 >gce.table 2> gce.log  ##for continuous model
+
+2. How to get a proper genome size?
+Firstly, you need to set -g total_kmer_num. You can obtain the value from the output of kmer frequence count programs.
+Secondly, you can use the estimate genome size in gce.log.
+
+The genome size estimated here is based the following details:
+1) formula: genome_size = now_kmer/final_cvg;
+2) now_kmer = total_kmer - low_sum_num( low_sum_num is calculated when updating now_node);
+3) final_cvg is much complex, for more detail, please read the published paper.
+
+3. How to decide whether to set -b(for bias data)?
+
+If you count kmer depth with a max value 255 and you need to use a1, then you have to pay attention to this question.
+There will be a peak in the depth 255, because when the depth of kmer is larger than 255, they will be added to the 255.
+This peak may cause the a1 value to be underestimated especially when there are certain kinds of sequencing bias existing.
+
+When the K size is small, especially less than 19 for human, you do not need to set this parameter. When the K size is larger than 19, you need to set this parameter for real sequencing data.
+For E.coli, because the species is quite smaller than 17, you need to set bias for real sequencing data.
+
+4. How to estimate the heterozygous ratio?
+When you want to estimate the heterozygous ratio, you need to make sure two points:
+1) there is clear half peak in the kmer depth distribution curve(a peak in the unique_depth/2 position).
+2) there is no sever bias or sequencing error.
+
+Then you can set -H 1 -c unique_depth. (unqiue_depth is the depth of unqiue peak, you can roughly estimated)
+In the gce, we will estimate Kmer Heterozygous Ratio(KHR) based on the formula: KHR = a1/2/(2-a1/2).
+To get the Base Heterozygous Ratio(BHR), you can use the formula: BHR = KHR/Kmer(suppose each snp cause K new kmers).
+
+5. How to decide whether use continuous model or discrete model?
+The performance of the two model is quite similar. For real sequencing data, it is proper to use continuous model.
+
+6. How to treat the situation when the peak recognized is wrong?
+You just set -c , then the peak around the c value will be recognized. This is
+quite useful when the main peaks failed to be recognized.
+
+7. How many peaks need to be considered when using continous model?
+It is suggested to set -D 8, then the total considered peak number is 48.
+
+Any more questions, please contact: binghang.liu@qq.com  or fanweiagis@126.com 
+Thank you!
+

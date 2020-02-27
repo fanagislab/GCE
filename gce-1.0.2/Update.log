@@ -1,0 +1,15 @@
+
+version v1.0.2  Feb 25 2020
+-------------------------------------------
+This version is modified from version v1.0.0;
+Fix a bug in load_freq(), new code is: if(depth_num >= Depth_Num); old code is: if(depth_num > Depth_Num);
+Modify discrete_model() and continuous_model(), replace output "now_node" with "kmer_num - low_kmer_num";
+Update usage(), emphasize that "-f" and "-g" option must both be set for gce, in order to get accuarate estimation;
+Increase the default value for option "-M", from 256 to 1500, which will be more sensitive and not too slow;
+This version include the latest kmerfreq excutable (Version 4.0, with max depth 65535)
+
+
+version v1.0.0  Dec 9th 2011
+-------------------------------------------
+This is the first published version.
+

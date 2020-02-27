@@ -1,0 +1,59 @@
+Load kmer depth frequency file...
+Set total kmer number is 173854609857
+File load finished, the last depth is 1499
+load node number 3282570140 total kmer number 173854609857
+
+For P(x):
+Possible peaks including: 75	1003	1023	1231	1299	
+
+For F(x):
+Possible peaks including: 81	664	720	816	878	1003	1023	1231	1299	
+
+Raw kmer depth estiamtion:
+Curve	peak	expect_depth
+k-mer species 75	75.8021
+k-mer individuals 81	80.848
+
+Warning: the expect depths caculated by P(x) and F(x) are ambiguous, you'd better set the option -c to get a credible result.
+The estimate peak number is 6
+the valley value is 28
+Initial ai...
+i	a[i]	c[i]
+1	0.289615	75.8021
+2	0.0671741	151.604
+3	0.0283416	227.406
+4	0.0154604	303.208
+5	0.00979108	379.011
+6	0.00696366	454.813
+i	b[i]	C[i]
+1	0.102597	80.848
+2	0.0437073	161.696
+3	0.0264292	242.544
+4	0.0192474	323.392
+5	0.015446	404.24
+6	0.0131843	485.088
+Initial ai and bi finished!
+start iterating using discrete model...
+C-iter number: 1	c distance: 1
+cvg is 75.8021 and node num is 742972072
+Cvg is 80.848 and kmer num is 167939910491
+A-iter number: 1	distance: 1
+update now num: 742972072 now kmer: 167939910491
+A-iter number: 2	distance: 0.0941175
+update now num: 742972072 now kmer: 167939910491
+A-iter number: 3	distance: 0.00115966
+update now num: 748141105 now kmer: 148044552381
+A-iter number: 4	distance: 0.00073058
+update now num: 748141108 now kmer: 148044552388
+For P(x):
+Possible peaks including: 75	186	264	342	411	1003	1023	1231	1299	
+the unique peak is 75
+For F(x):
+Possible peaks including: 81	199	283	364	437	664	720	816	878	1003	1023	1231	1299	
+the unique peak is 81
+
+Final estimation table:
+raw_peak	effective_kmer_species	effective_kmer_individuals	coverage_depth	genome_size	a[1]	b[1]
+75	748141108	168346645871	75.8021	2.22087e+09	0.657925	0.271515
+
+Discrete mode estimation finished!
